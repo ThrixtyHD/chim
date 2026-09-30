@@ -1,5 +1,5 @@
 # chim
-This is my WIP SDL3 project I developed to test my knowledge of C++. It features a debugging console aimed to speed up testing certain features.
+This is a WIP SDL3 project I developed to test my knowledge of C++. It features a debugging console aimed to speed up testing certain features.
 
 ### Functionality
 
