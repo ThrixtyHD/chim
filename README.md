@@ -53,3 +53,5 @@ if (keys[SDL_SCANCODE_PAGEDOWN])
 {
     console.ScrollOutput(1);
 }```
+The label system works with a monospaced ASCII char sheet: ``` !"#$%&'()*+,-./0123456789:;<=>?​@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_​`abcdefghijklmnopqrstuvwxyz{|}~```.
+In the repo, I have supplied my debug font. It is 8x8px.
