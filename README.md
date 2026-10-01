@@ -15,3 +15,41 @@ You have your standard `Enter` and `Backspace` submitting and removing character
 | `Down` | Scroll history down |
 | `Page Up` | Scroll output up |
 | `Page Down` | Scroll output up |
+
+### Setup
+The console and label requires linking with the SDL3 window and renderer. I set up my inputs like this: ```if (keys[SDL_SCANCODE_BACKSPACE])
+{
+    console.RemoveCharFromString();
+}
+if (keys[SDL_SCANCODE_UP])
+{
+    console.ScrollHistory(1);
+}
+if (keys[SDL_SCANCODE_DOWN])
+{
+    console.ScrollHistory(0);
+}
+if (keys[SDL_SCANCODE_LEFT])
+{
+    console.MovePosition(0);
+}
+if (keys[SDL_SCANCODE_RIGHT])
+{
+    console.MovePosition(1);
+}
+if (keys[SDL_SCANCODE_RETURN])
+{
+    console.ProcessCommand(state);
+}
+if (keys[SDL_SCANCODE_TAB])
+{
+    console.AutoComplete();
+}
+if (keys[SDL_SCANCODE_PAGEUP])
+{
+    console.ScrollOutput(0);
+}
+if (keys[SDL_SCANCODE_PAGEDOWN])
+{
+    console.ScrollOutput(1);
+}```
